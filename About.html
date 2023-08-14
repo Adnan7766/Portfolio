@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Adnan Portfolio</title>
+     <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+     <script src="backToTopScript.js"></script>
+ <script src="script.js"></script>
+ <script src="main.js"></script>
+ <style>
+    .title{
+        background: none !important;
+        padding: 0 !important;
+    }
+    @media (max-width: 768px) {
+        html {
+    font-size: 14px !important; /* Adjust base font size for smaller screens */
+  }
+  .heading {
+     
+    padding: 1em 1em 1em 1em;
+    width: 50%;
+}
+    }
+    @media screen and (max-width:480px) {
+    }
+  
+ </style>
+</head>
+<body>
+  
+  <head class="header">
+    <nav class="nav-bar">
+        <img src="Charcoal Square Hipster Logo (1).png" alt="Signature">
+        <div class="menu-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</div>
+        <div class="navbar" id="myNav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skills.html">Skill</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="Achivements.html">Achievements</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="About.html">About us</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</head>
+    <button id="backToTopBtn" title="Go to top" onclick="scrollToTop()"> <i class="fa fa-angle-up"></i></button>
+<div class="about-container">
+    <span></span>
+    <div class="image-container">
+        <h1>About </h1>
+        <p>I craft digital experiences that <span class="interactive">captivate</span> and <span class="interactive">innovate</span> the web.</p>
+        <div class="title"> 
+            <div class="breadcumb-inner">
+                <ul>
+                    <li><a href="Portifiolo.html">Home</a></li>
+                    <li><i class="fa fa-angle-right"></i></li>
+                    <li> About </li>
+                </ul>
+            </div></div>
+    </div>
+    <div class="about">
+    <div class="about-me">
+        <div class="heading"> 
+            <div class="heading1">
+                <h6>About me</h6>
+            </div>
+            <div class="heading2">
+            
+                <h2>Front-end Web Developer</h2>
+                <p>Hey there! <br> I'm Adnan Rajab, a dedicated front-end web developer driven by a passion for blending creativity and technology to create exceptional digital experiences. Currently pursuing a BSc degree in Information Engineering Technology (IET) at the National Skills University in Islamabad, I'm committed 
+                to both learning and contributing in the dynamic world of web development.</p>
+                <p>My journey into web development was sparked by an inherent curiosity about design and an eagerness to understand the inner workings of technology. Over time, I've refined my skills, and today, I excel in designing seamless user interfaces that seamlessly combine aesthetics and functionality. Through the powerful trio of HTML, CSS, and JavaScript, I ensure 
+                that the websites I construct not only exhibit visual finesse but also captivate and engage visitors.</p>
+                 
+                <p>While I work towards my BSc degree in Information Engineering Technology (IET), I'm acquiring a deep comprehension of the technical nuances underpinning contemporary innovations. My education at the National Skills University in Islamabad equips 
+                me with the tools to tackle intricate challenges and implement cutting-edge solutions.</p>
+                 
+                </div>
+        </div>
+        <div class="myimage">
+            <img src="myimage.jpeg" alt="">
+        </div>
+    </div></div>
+    
+    <div class="last-para">
+        <p>Feel free to reach out, and let's embark on a journey to create something truly extraordinary.</p>
+        <div class="projects">
+          <h3>Projects:</h3>
+          <ul>
+            <li><a href="#projects"><i class="fas fa-code"></i> 1. Tech-Code Academy</a></li>
+            <li><a href="#projects"><i class="fas fa-code"></i> 2. Portfolio</a></li>
+            <li><a href="#projects"><i class="fas fa-calculator"></i> 3. Calculator</a></li>
+            <li><a href="#projects"><i class="fas fa-rocket"></i> 4. Landpage</a></li>
+          </ul>
+        </div><br>
+        <p >Connect with me:</p><br>
+        <p>
+          <a href="mailto:example@example.com"><i class="fas fa-envelope"></i> Email</a>
+          <a href="https://github.com/yourusername"><i class="fab fa-github"></i> GitHub</a>
+        </p><br>
+        <p class="skills" style="font-size: 24px; font-weight: 800;">
+          My skills: <br>
+          <span><i class="fab fa-html5"></i> HTML</span>
+          <span><i class="fab fa-css3-alt"></i> CSS</span>
+          <span><i class="fab fa-js"></i> JavaScript</span>
+          <span><i class="fab fa-python"></i> Python</span>
+        </p>
+      </div>
+    
+    
+    <div class="interactive-div" onclick="showContact()">
+        <p>Want to collaborate or discuss a project?</p>
+        <p style="  text-decoration: underline;">Let's get in touch!</p>
+      </div>
+    
+</div>
+ 
+<script>
+    
+    function showContact() {
+      // You can add code here to display a contact form or contact details
+      window.location.href = "contact.html";
+    }
+  </script>
+</body>
+</html>

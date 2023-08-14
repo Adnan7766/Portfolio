@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Adnan Portfolio</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+     <script src="backToTopScript.js"></script>
+     <script src="main.js"></script>
+ <script src="script.js"></script>
+</head>
+<body>
+    
+    <head class="header">
+        <nav class="nav-bar">
+            <img src="Charcoal Square Hipster Logo (1).png" alt="Signature">
+            <div class="menu-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</div>
+            <div class="navbar" id="myNav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="skills.html">Skill</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                        <li><a href="Achivements.html">Achievements</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="About.html">About us</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </head>
+    <div class="title">
+        <h1>Contact</h1>
+        <div class="breadcumb-inner">
+            <ul>
+                <li><a href="Portifiolo.html">Home</a></li>
+                <li><i class="fa fa-angle-right"></i></li>
+                <li>contact</li>
+            </ul>
+        </div>
+    </div>
+    <div class="contactcontainer">
+        <h5>contact us</h5>
+        <h3>we Are here for you</h3>
+        <p>Got a project in mind? We’d love to hear about it. Take five minutes to fill
+            out our project form so that we can get to know you and understand your project.</p>
+    </div>
+    <div class="section-element">
+        <div class="elementry">
+            <div class="elementry-two">
+                <div class="icon">
+                    <i class="	fas fa-map-marker-alt"></i>
+                </div>
+                <h2>
+                    Enter your Address
+                </h2>
+                <p>
+                     city , country
+                </p>
+            </div>
+        </div>
+        <div class="elementry">
+            <div class="elementry-two">
+                <div class="icon">
+                    <i class="		far fa-clock"></i>
+                </div>
+                <h2>
+                    Opening Hours
+                </h2>
+                <p>
+                    Respones Quickly
+                </p>
+            </div>
+        </div>
+        <div class="elementry">
+            <div class="elementry-two">
+                <div class="icon">
+                    <i class="	fas fa-phone"></i>
+                </div>
+                <h2>
+                    Contact Directly
+                </h2>
+                <p>
+                    @gmail.com
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="contact-page">
+        <div class="section-title">
+            <div class="contactcontainer">
+                <h5>contact us</h5>
+                <h3> Feel Free contact</h3>
+                <h2>Us Now
+                    <span></span>
+                </h2>
+            </div>
+        </div>
+        <form onsubmit=" sendEmail();  reset(); return false;">
+            <div class="input-container">
+
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Email id" required>
+                <input type="text" id="phone" placeholder="Phone no." required>
+                <input type="text" id="website" placeholder="Website">
+                <textarea name="textarea" id="message" cols="20" rows="7" placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+            </div>
+
+        </form>
+    </div>
+    <button id="backToTopBtn" title="Go to top" onclick="scrollToTop()"> <i class="fa fa-angle-up"></i></button>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "adnanrajab7766@gmail.com", // Use your actual Gmail address here
+                Password: "B8DDCB293291C26C7A8B83A0F4A8BD736F2A", // Use a server-side solution to securely handle passwords
+                To: 'adnanrajab7766@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New contact form Enquiry",
+                Body: " hi"
+            }).then(function (message) {
+                alert("Email sent successfully!");
+            }).catch(function (error) {
+                alert("Email could not be sent. Please check your details and try again.");
+            });
+        }
+    </script>
+</body>
+
+</html>
